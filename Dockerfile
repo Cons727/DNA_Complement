@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:1
 FROM rocker/shiny:4.0.5
 
 # Install system requirments for index.R as needed
