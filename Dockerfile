@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Install R packages
-ENV_R_SHLIB_STRIP_=true
+ENV _R_SHLIB_STRIP_=true
 COPY Rprofile.site /etc/R
 RUN install2.r --error --skipinstalled \
     shiny \
